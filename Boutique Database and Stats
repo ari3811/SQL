@@ -1,0 +1,22 @@
+-Create a database for a boutique
+CREATE TABLE boutique (id integer primary key, item text, quantity integer, size text, price numeric);
+INSERT INTO boutique VALUES 
+(1, "Tshirts",200,"S", 5.50), 
+(2, "Leggings", 50, "M", 10), 
+(3,"Jeans",40,"M",30),
+(4, "Jumpsuit",20,"S", 50),
+(5, "Underwear", 60,"L", 3.42), 
+(6,"Socks", 40, "M",3.5), 
+(7, "Blouses", 35, "M",20),
+(8, "Dresses", 100, "L", 40),
+(9,"Rompers",100,"M",50),
+(10, "Pajamas",60,"S",20),
+(11, "Shorts", 40, "M",15),
+(12, "Hoodie", 100, "L",35.60),
+(13, "Tank_Top",100, "S", 4.5),
+(14, "Cardigan",200,"M",12),
+(15, "Sweatshirt", 100, "L",30);
+-Order the database by price
+SELECT * FROM boutique ORDER BY price;
+-Find the average price of an item at the boutique
+SELECT AVG(price) from boutique;
